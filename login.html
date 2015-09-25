@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta content="telephone=no" name="format-detection" />
+	<link rel="stylesheet" type="text/css" href="http://res.mpre.cnsuning.com/common/style/base/2.0/base.css" media="all">
+	<link rel="stylesheet" type="text/css" href="style/login/login.css" media="all">
+	<title>登录</title>
+</head>
+<body>
+	<div class="sn-nav">
+		<div class="sn-nav-back"><a class="sn-iconbtn" href="#">返回</a></div>
+		<div class="sn-nav-title of">登录</div>
+	</div>
+	<section class="sn-main pr">
+		<div class="sn-block">
+			<div class="input-a mt30 wbox bt pr">
+				<span class="label">账号</span>
+				<div class="wbox-flex ml60 pr">
+					<input type="text" id="username" class="text-email" autocomplete="off" placeholder="手机号/邮箱/用户名/门店会员卡">
+				</div>
+				<a href="javascript:void(0)"><em class="delete" style="display:none"></em></a>
+				<a href="javascript:void(0)" class="arrow-down"></a>
+				<ul class="email-list" style="display:none;z-index:2;">
+				</ul>
+				<ul class="history-list" style="display:none;">
+					<li>樱桃小丸子1</li>
+					<li>樱桃小丸子2</li>
+					<li>花轮君嘻嘻</li>
+					<li>aaa@</li>
+					<li class="empty">清除历史</li>
+				</ul>
+				<ul class="match-list" style="display:none;z-index:1;">
+				</ul>
+
+			</div>
+			<div class="input-a wbox">
+				<span>密码</span>
+				<div class="wbox-flex ml60 pr">
+					<input type="password" autocomplete="off" placeholder="输入易购密码">
+				</div>
+				<em class="delete" style="display:none"></em>
+			</div>		
+		</div>
+		<div class="imgcode input-a sn-block mt30 wbox">
+			<span>验证码</span>
+			<div class="wbox-flex ml30 pr">
+				<input type="text" autocomplete="off" placeholder="输入图形验证码">
+			</div>
+			<em class="delete mr30" style="display:none"></em>
+			<a href="javascript:void(0)" class="getimgcode bl">
+				<img src="https://vcs.suning.com/vcs/imageCode.htm?uuid=535c7973-458e-4e48-ad54-b331ac79973f&yys=1428565558312" alt="">
+				<span class="refresh"></span>
+			</a>
+		</div>
+		<div class="auto-login mv30 p30">
+			<input type="checkbox" class="input-reset sn-checkbox" checked="checked">
+			<span class="va">自动登录</span>
+		</div>
+		<a href="javascript:void(0)" class="login sn-btn sn-btn-dark sn-btn-big sn-btn-block m30">登录</a>
+		<p class="assisFun f14 m30"><a href="javascript:void(0)">快速注册</a><a class="tr" href="javascript:void(0)">忘记密码?</a></p>
+	</section>
+	<div class="sn-mask" style="display:none"></div>
+	<div class="sn-loading" style="display:none">
+		<div class="sn-html5-loading">
+			<div class="blueball"></div>
+			<div class="orangeball"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://m.suning.com/RES/wap/common/script/lib/zepto/1.1.4/zepto.min.js"></script>
+	<script type="text/javascript" src="http://res.mpre.cnsuning.com/common/script/module/alertBox/2.0.0/alertBox.js"></script>
+	<script type="text/javascript" src="script/login/login.js"></script>
+	<script type="text/javascript" src="script/login/dropdown.js"></script>
+</body>
+</html>
+
